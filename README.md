@@ -67,10 +67,10 @@ class MoELoss(nn.Module):
 ### Case 2: W-Shape Data (4 Experts)
 * **Task:** Fit a W-shaped function (Double V).
 * **Configuration:** 4 Experts.
-* **Result:** The experts automatically divide the domain into 4 distinct linear segments.
+* **Result:** The model successfully decomposed the complex W-shape. Interestingly, although 4 experts were configured, the Gating Network learned to solve the task using only 3 experts (Red, Green, Orange), leaving one expert unused. This demonstrates the model's ability to efficiently allocate resources based on task complexity.
 
 ![W-Shape Result](assets/w_shape_result.png)
-*(Fig 2. Four experts (Red, Blue, Green, Orange) successfully decomposing the W-shape function.)*
+*(Fig 2. Decomposition result with 4 experts. Note that the model efficiently utilized only 3 experts (Red, Green, Orange) to solve the problem, effectively pruning the fourth expert.)*
 
 ## 📈 Performance Tuning Guide
 
