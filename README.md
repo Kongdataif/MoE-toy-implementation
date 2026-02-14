@@ -88,6 +88,7 @@ Based on experiments, here are strategies to improve MoE performance:
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/YOUR_USERNAME/MoE-toy-implementation.git](https://github.com/YOUR_USERNAME/MoE-toy-implementation.git)
+   cd MoE-toy-implementation
    ```
    
 2. **Install dependencies:**
@@ -97,9 +98,14 @@ Based on experiments, here are strategies to improve MoE performance:
     ```
 
 3. **Run the training script:**
+    Case 1: V-Shape Data (2 Experts)
     ```bash
-    python train.py
+    python train_v_shape.py
     ```
-
+    Case 2: W-Shape Data (4 Experts)
+   ```bash
+   python train_w_shape.py
+    ```
+   
 📚 References
 Paper: Jacobs, R. A., Jordan, M. I., Nowlan, S. J., & Hinton, G. E. (1991). Adaptive Mixtures of Local Experts. Neural Computation.
