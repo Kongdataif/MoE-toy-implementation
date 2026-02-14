@@ -62,6 +62,7 @@ class MoELoss(nn.Module):
 * **Result:** The model perfectly splits the task. One expert handles the left slope ($x<0$), and the other handles the right slope ($x>0$).
 
 ![V-Shape Result](assets/v_shape_result.png)
+
 *(Fig 1. Red and Blue dots represent data points assigned to Expert A and Expert B, respectively.)*
 
 ### Case 2: W-Shape Data (4 Experts)
@@ -70,6 +71,7 @@ class MoELoss(nn.Module):
 * **Result:** The model successfully decomposed the complex W-shape. Interestingly, although 4 experts were configured, the Gating Network learned to solve the task using only 3 experts (Red, Green, Orange), leaving one expert unused. This demonstrates the model's ability to efficiently allocate resources based on task complexity.
 
 ![W-Shape Result](assets/w_shape_result.png)
+
 *(Fig 2. Decomposition result with 4 experts. Note that the model efficiently utilized only 3 experts (Red, Green, Orange) to solve the problem, effectively pruning the fourth expert.)*
 
 ## 📈 Performance Tuning Guide
