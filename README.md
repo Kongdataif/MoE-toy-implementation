@@ -63,7 +63,7 @@ class MoELoss(nn.Module):
 
 ![V-Shape Result](assets/v_shape_result.png)
 
-*(Fig 1. Red and Blue dots represent data points assigned to Expert A and Expert B, respectively.)*
+* *Fig 1. Red and Blue dots represent data points assigned to Expert A and Expert B, respectively.*
 
 ### Case 2: W-Shape Data (4 Experts)
 * **Task:** Fit a W-shaped function (Double V).
@@ -72,7 +72,7 @@ class MoELoss(nn.Module):
 
 ![W-Shape Result](assets/w_shape_result.png)
 
-*(Fig 2. Decomposition result with 4 experts. Note that the model efficiently utilized only 3 experts (Red, Green, Orange) to solve the problem, effectively pruning the fourth expert.)*
+* *Fig 2. Decomposition result with 4 experts. Note that the model efficiently utilized only 3 experts (Red, Green, Orange) to solve the problem, effectively pruning the fourth expert.*
 
 ## 📈 Performance Tuning Guide
 
