@@ -98,11 +98,12 @@ Based on experiments, here are strategies to improve MoE performance:
     ```
 
 3. **Run the training script:**
-    Case 1: V-Shape Data (2 Experts)
+   
+    *Case 1: V-Shape Data (2 Experts)*
     ```bash
     python train_v_shape.py
     ```
-    Case 2: W-Shape Data (4 Experts)
+   *Case 2: W-Shape Data (4 Experts)*
    ```bash
    python train_w_shape.py
     ```
